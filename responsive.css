@@ -1,4 +1,4 @@
-@media (min-width: 600px) and (max-width: 800px) {
+@media (max-width: 800px) {
     nav ul {
         width: 100%;
         font-size: x-small;
