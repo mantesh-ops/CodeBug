@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: .5px solid black; */
+    font-family: google;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: google;
+    src: url("./fonts/product-sans/Product\ Sans\ Regular.ttf");
+}
+
+@font-face {
+    font-family: g-bold;
+    src: url("./fonts/product-sans/Product\ Sans\ Bold.ttf");
+}
+
+@font-face {
+    font-family: g-italic;
+    src: url("./fonts/product-sans/Product\ Sans\ Italic.ttf");
+}
+
+@font-face {
+    font-family: g-bold-italic;
+    src: url("./fonts/product-sans/Product\ Sans\ Bold\ Italic.ttf");
+}
+
+body {
+    /* background: rgba(36, 37, 37, 0.377); */
+    background: transparent;
+}
+
+nav {
+    height: 10dvh;
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: transparent; */
+    z-index: 90;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 40%;
+    list-style: none;
+    border-radius: 7px;
+    /* background: rgba(85, 86, 87, 0.171); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top: 1rem;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.849);
+    font-size: large;
+}
+
+.page-1 {
+    height: 90dvh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.page-1 .left,
+.page-1 .right {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 45%;
+    text-align: center;
+    /* background: lightblue; */
+}
+
+.page-1 .left .auto {
+    display: flex;
+    width: 50%;
+    height: max-content;
+}
+
+.page-1 .left {
+    height: 90%;
+    /* background: rgba(85, 86, 87, 0.171); */
+    border-radius: 10px;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.page-1 .left .logo {
+    height: 13rem;
+    width: 13.8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url("./images/logo.jpg") center center; */
+    overflow: hidden;
+}
+
+.page-1 .left .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-1 .left .auto {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.page-1 .left .main-heading {
+    font-size: 1.725rem;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.page-1 .left .main-description {
+    height: max-content;
+    width: 75%;
+    font-size: 1.275rem;
+}
+
+.page-1 .left .btn {
+    width: 24%;
+    height: 10%;
+}
+
+.page-1 .left .btn button {
+    height: 100%;
+    width: 100%;
+    font-size: 1.225rem;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    transition: all .5s;
+    color: white;
+    background: black;
+}
+
+.page-1 .left .btn button:hover {
+    letter-spacing: 1px;
+}
+
+.page-1 .right .slider {
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+}
+
+.page-1 .right .slider img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.page-2 {
+    width: 100%;
+    /* height: 12dvh; */
+    /* height: max-content; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin-top: 3rem;
+    /* background: rgb(4, 0, 15); */
+    background: #080013;
+    /* margin-bottom: 3rem; */
+}
+
+.page-2 h2 {
+    font-weight: 300;
+    font-size: 2.5em;
+    border-bottom: 1px solid #fff;
+    color: white;
+    text-align: center;
+    height: 7.5%;
+}
+
+.page-2 .card-container {
+    margin-top: 1rem;
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 65dvh);
+    gap: 20px;
+    /* justify-items: center; */
+    /* align-items: center; */
+    justify-content: center;
+    place-content: center;
+    align-content: center;
+    transition: all .5s;
+}
+
+.page-2 .card-container .price-card {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    transition: all .5s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.page-2 .card-container:has(.price-card:hover) .price-card:not(.price-card:hover) {
+    opacity: .7;
+    filter: blur(5px);
+    transition: all .5s;
+}
+
+.page-2 .card-container .price-card img {
+    width: 100%;
+    height: 40%;
+    z-index: -2;
+    /* background: red; */
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.page-2 .card-container .price-card:hover img {
+    transition: all .5s;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-2 .card-container .price-card .details {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    text-shadow: 0 0 0px #fff, 0 0 2px #fff, 0 0 5px;
+    color: white;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page-2 .card-container .price-card:hover .details {
+    top: 50%;
+    letter-spacing: 1px;
+    text-shadow: none;
+}
+
+
+.page-2 .card-container .price-card .details .buy-card {
+    width: 40%;
+    visibility: hidden;
+    height: 20%;
+    font-size: larger;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: color .5s;
+}
+
+.page-2 .card-container .price-card .details .buy-card:hover {
+    background: gold;
+}
+
+.page-2 .card-container .price-card:hover .details .buy-card {
+    background: rgb(11, 2, 88, .6);
+    visibility: visible;
+    transition: all 1ms;
+}
+
+.page-2 .card-container .price-card .details .price {
+    font-size: x-large;
+}
+
+.page-3 {
+    height: 100dvh;
+    /* height: max-content; */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 8, 17);
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+}
+
+.page-3 .circle {
+    /* z-index: 0; */
+    background: rgb(30, 133, 236);
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    height: 100%;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.page-3 .main-heading {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+    /* height: 10%; */
+    margin-top: 3rem;
+}
+
+.page-3 .main {
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 65dvh);
+    gap: 37px;
+    /* background: lightcyan; */
+    margin-top: 4rem;
+}
+
+.page-3 .main .card {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 7px;
+    margin-bottom: 4rem;
+}
+
+.page-3 .main .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: all .5s;
+}
+
+.page-3 .main .card:hover img {
+    scale: 1.5;
+}
+
+.page-3 .main .card .details {
+    z-index: 99;
+    position: absolute;
+    top: 70%;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    left: -150%;
+    backdrop-filter: blur(7px);
+    /* background: rgba(0, 0, 0, .5); */
+    transition: all .5s;
+    color: white;
+}
+
+.page-3 .main .card .details * {
+    font-weight: 100;
+}
+
+.page-3 .main .card:hover .details {
+    left: 0;
+    transition: all .5s;
+}
