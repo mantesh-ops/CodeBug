@@ -1,11 +1,7 @@
-@media (max-width: 800px) {
+@media (width < 767px) {
     nav ul {
         width: 100%;
         font-size: x-small;
-    }
-
-    footer {
-        display: none;
     }
 
     .page-1 {
@@ -44,7 +40,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         /* background: url("./images/logo.jpg") center center; */
-        overflow: hidden;
+        overflow:hidden;
     }
 
     .page-1 .left .btn {
@@ -69,6 +65,7 @@
 
     .page-2 .card-container .price-card {
         width: 70%;
+        height: 100%;
         margin: auto;
     }
 
@@ -85,9 +82,39 @@
         grid-template-rows: repeat(3, 45dvh);
         /* height: max-content; */
     }
+
+    .page-3 .circle {
+        /* z-index: 0; */
+        background: rgb(30, 133, 236);
+        position: absolute;
+        top: -40%;
+        left: -40%;
+        height: 100%;
+        width: 70%;
+        border-radius: 50%;
+    }
+
+    .page-1 .right .slider {
+        height: 100%;
+        width: 95%;
+    }
+
+    .page-1 .right .slider img {
+        width: 50%;
+        height: 90%;
+        border-radius: 10px;
+    }
+
+    footer {
+        height: 100dvh; 
+        gap: 10px;
+        background-color: black;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 30dvh);
+    }
 }
 
-@media (width > 600px) and (width < 900px) {
+@media (width > 767px) and (width < 900px) {
     .page-2 .card-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 50dvh);
@@ -101,6 +128,13 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 50dvh);
     }
+
+    footer {
+        height: 70dvh; 
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 @media (width > 900px) and (width < 1300px) {
@@ -112,5 +146,12 @@
     .page-3 .main {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 65dvh);
+    }
+
+    footer {
+        height: 40dvh; 
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 40dvh);
     }
 }
