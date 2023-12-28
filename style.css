@@ -5,6 +5,16 @@
     /* outline: .5px solid black; */
     font-family: google;
     scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+button:active {
+    scale: .8;
 }
 
 @font-face {
@@ -157,15 +167,24 @@ nav ul li a {
     letter-spacing: 1px;
 }
 
+.page-1 .right {
+    height: 80%;
+    width: 30%;
+    overflow: hidden;
+}
+
 .page-1 .right .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     object-fit: cover;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
 
 .page-1 .right .slider img {
-    width: 100%;
-    height: 100%;
+    width: 55dvw;
+    height: 70dvh;
     border-radius: 10px;
 }
 
@@ -191,10 +210,11 @@ nav ul li a {
     color: white;
     text-align: center;
     height: 7.5%;
+    margin-top: 1rem;
 }
 
 .page-2 .card-container {
-    margin-top: 1rem;
+    margin-top: 3rem;
     width: 90%;
     height: 80%;
     display: grid;
@@ -242,9 +262,9 @@ nav ul li a {
 .page-2 .card-container .price-card .details {
     position: absolute;
     z-index: 99;
-    top: 50%;
+    top: 60%;
     width: 100%;
-    height: 50%;
+    height: 40%;
     text-shadow: 0 0 0px #fff, 0 0 2px #fff, 0 0 5px;
     color: white;
     transition: all .5s;
@@ -258,8 +278,9 @@ nav ul li a {
     top: 50%;
     letter-spacing: 1px;
     text-shadow: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
 }
-
 
 .page-2 .card-container .price-card .details .buy-card {
     width: 40%;
@@ -322,6 +343,7 @@ nav ul li a {
     color: white;
     border-bottom: 2px solid white;
     /* height: 10%; */
+    z-index: 3;
     margin-top: 3rem;
 }
 
@@ -332,7 +354,7 @@ nav ul li a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 65dvh);
     gap: 37px;
-    /* background: lightcyan; */
+    /* background: lightcya n; */
     margin-top: 4rem;
 }
 
@@ -371,7 +393,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    left: -150%;
+    left: -100%;
     backdrop-filter: blur(7px);
     /* background: rgba(0, 0, 0, .5); */
     transition: all .5s;
@@ -385,4 +407,63 @@ nav ul li a {
 .page-3 .main .card:hover .details {
     left: 0;
     transition: all .5s;
+}
+
+footer {
+    height: 40dvh;
+    width: 100%;
+    /* display: flex; */
+    background: black;
+    /* align-items: center;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, fr);
+}
+
+footer .left,
+footer .mid,
+footer .right {
+    height: 100%;
+    width: 100%;
+    /* background: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    /* background: black; */
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    color: white;
+    font-weight: 200;
+    border-right: 2px solid white;
+}
+
+footer .mid h5:hover {
+    border-bottom: 1px solid white;
+}
+
+footer .right *,
+footer .mid * {
+    font-weight: 200;
+    color: #fff;
+    transition: all .5s;
+}
+
+footer .right ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+footer .right ul *:hover {
+    transform: translateY(-3px);
+}
+
+footer .left img {
+    object-fit: cover;
+    /* border-radius: 50%; */
+    height: 100%;
+    width: 50%;
+    filter: drop-shadow(0px 0px 50px rgb(150, 147, 147));
 }
