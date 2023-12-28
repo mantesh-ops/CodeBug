@@ -16,10 +16,11 @@
             <li><a href="#page-1">Home</a></li>
             <li><a href="#page-2">Team</a></li>
             <li><a href="#mentor">Mentors & Trainer</a></li>
-            <li><a href="#footer">Socials</a></li>
+            <li><a href="#socials">Socials</a></li>
         </ul>
     </nav>
-
+    <div class="time-limit" id="countdown">
+    </div>
     <div class="page-1" id="page-1">
         <div class="left">
             <div class="logo">
@@ -34,9 +35,12 @@
                 voluptas fugiat dolorum voluptatem assumenda.
             </p>
             <div class="btn">
-                <button class="register"><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdgKV7bvkbaPB27s68mU9DK8j8i6gDQuIhkq186y0M7W8j2Ew/viewform?usp=pp_url">Register
-                        now</a></button>
+                <button class="register">
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdgKV7bvkbaPB27s68mU9DK8j8i6gDQuIhkq186y0M7W8j2Ew/viewform?usp=pp_url">
+                        Register now
+                    </a>
+                </button>
             </div>
         </div>
         <div class="right">
@@ -227,7 +231,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer id="socials">
         <div class="left">
             <img src="./images/logo-removebg-preview.png" alt="logo">
         </div>
@@ -359,6 +363,41 @@
             <h4>CIPHER SQUAD | All rights reserved 2024.</h4>
         </div>
     </footer>
+    <script>
+        // Get the current date and time in Mumbai, India
+        const now = new Date();
+        const currentDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds(), now.getMilliseconds());
+        const endDate = new Date(2024, 0, 5, 23, 59, 59, 999); // Set to 23:59:59 to ensure countdown reaches 0
+
+        // Calculate the time difference in milliseconds
+        const timeDifference = endDate.getTime() - currentDate.getTime();
+
+        // Function to update the countdown display
+        function updateCountdown() {
+            const timeLeft = timeDifference - (Date.now() - currentDate.getTime());
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            // Display the countdown in the specified container
+            const countdownContainer = document.getElementById("countdown");
+            countdownContainer.innerHTML = `
+            <h2>Registration ends in : &nbsp;</h2>
+            <div class="time">
+                <span>Days: ${days} &nbsp; </span>
+                <span>Hours: ${hours} &nbsp; </span>
+                <span>Minutes: ${minutes} &nbsp; </span>
+                <span>Seconds: ${seconds} &nbsp; </span>
+            </div>     
+  `;
+        }
+
+        // Start the countdown
+        updateCountdown();
+        setInterval(updateCountdown, 1000); // Update every second
+
+    </script>
     <script>
         // Initialize Type.js
         var options = {
