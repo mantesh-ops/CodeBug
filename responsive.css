@@ -1,4 +1,26 @@
 @media (width < 767px) {
+    .time-limit {
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        margin-top: 1.5rem;
+        background: black;
+    }
+    
+    .time-limit h2 {
+        font-size: medium;
+        width: max-content;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .time-limit span {
+        color: white;
+        gap: 5px;
+        transition: all .1s;
+        animation: limit 1s linear infinite;
+    }
+
     nav ul {
         width: 100%;
         font-size: x-small;
