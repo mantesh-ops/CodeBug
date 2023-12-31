@@ -211,8 +211,8 @@ nav ul li a {
     width: 100%;
 }
 
-.page-1 .right .slider img {
-    width: 55dvw;
+.page-1 .right .slider video {
+    width: 65dvw;
     height: 70dvh;
     border-radius: 10px;
 }
