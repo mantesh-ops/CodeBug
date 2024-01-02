@@ -42,3 +42,11 @@ var options = {
 };
 
 var typed = new Typed('.auto-type-text', options);
+
+const loader = document.querySelector(".loader");
+const body = document.querySelector("body");
+
+document.addEventListener("DOMContentLoaded", () => {
+    loader.style.display = "none";
+});
+
