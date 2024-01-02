@@ -42,6 +42,33 @@ body {
     background: transparent;
 }
 
+.loader {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(12, 12, 12, 0.705);
+    backdrop-filter: blur(7px);
+    position: fixed;
+    z-index: 999;
+}
+
+.loader .loading {
+    height: 18dvh;
+    width: 8dvw;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-top: 5px solid  black;
+    animation: turn 1s linear infinite;
+}
+
+@keyframes turn {
+    100% {
+        rotate: 1turn;
+    }
+}
+
 nav {
     height: 10dvh;
     width: 100%;
