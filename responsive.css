@@ -1,4 +1,9 @@
 @media (width < 767px) {
+    .loader .loading {
+        height: 10dvh;
+        width: 17.5dvw;
+    }
+
     .time-limit {
         flex-direction: column;
         width: 100%;
@@ -120,6 +125,11 @@
         gap: 10px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    .loader .loading {
+        height: 10dvh;
+        width: 8dvw;
     }
 }
 
