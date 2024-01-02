@@ -311,143 +311,26 @@ nav ul li a {
     backdrop-filter: blur(20px);
 }
 
-.page-2 .card-container .price-card .details .buy-card {
-    width: 40%;
-    visibility: hidden;
-    height: 20%;
-    font-size: larger;
-    border: none;
-    outline: none;
-    color: white;
-    background: rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    transition: color .5s;
-}
-
-.page-2 .card-container .price-card .details .buy-card:hover {
-    background: gold;
-}
-
-.page-2 .card-container .price-card:hover .details .buy-card {
-    background: rgb(11, 2, 88, .6);
-    visibility: visible;
-    transition: all 1ms;
-}
-
-.page-2 .card-container .price-card .details .price {
+.page-2 .card-container .price-card .details .name {
+    font-weight: 200;
     font-size: x-large;
 }
 
-.page-3 {
-    height: 100dvh;
-    /* height: max-content; */
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgb(0, 8, 17);
-    /* margin-top: 2rem; */
-    margin-bottom: 2rem;
-}
-
-.page-3 .circle {
-    /* z-index: 0; */
-    background: rgb(30, 133, 236);
-    position: absolute;
-    top: -40%;
-    left: -20%;
-    height: 100%;
-    width: 40%;
-    border-radius: 50%;
-}
-
-.page-3 .main-heading {
-    font-size: 2rem;
-    font-weight: 100;
-    text-align: center;
-    color: white;
-    border-bottom: 2px solid white;
-    /* height: 10%; */
-    z-index: 3;
-    margin-top: 3rem;
-}
-
-.page-3 .main {
-    width: 70%;
-    height: 70%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 65dvh);
-    gap: 37px;
-    /* background: lightcya n; */
-    margin-top: 4rem;
-}
-
-.page-3 .main .card {
-    height: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    border-radius: 7px;
-    margin-bottom: 4rem;
-}
-
-.page-3 .main .card img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 0;
-    transition: all .5s;
-}
-
-.page-3 .main .card:hover img {
-    scale: 1.5;
-}
-
-.page-3 .main .card .details {
-    z-index: 99;
-    position: absolute;
-    top: 70%;
-    height: 30%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    left: -100%;
-    backdrop-filter: blur(7px);
-    /* background: rgba(0, 0, 0, .5); */
-    transition: all .5s;
-    color: white;
-}
-
-.page-3 .main .card .details * {
-    font-weight: 100;
-}
-
-.page-3 .main .card:hover .details {
-    left: 0;
-    transition: all .5s;
+.page-2 .card-container .price-card .details .price {
+    font-size: large;
 }
 
 footer {
     height: 40dvh;
     width: 100%;
+    margin-top: 1rem;
     /* display: flex; */
     background: black;
     /* align-items: center;
     justify-content: space-evenly; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 footer .left,
