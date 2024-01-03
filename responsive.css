@@ -26,6 +26,17 @@
         animation: limit 1s linear infinite;
     }
 
+    .page-2 .leader {
+        margin-top: 2rem;
+        height: 25dvh;
+        width: 60dvw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background: lightcoral; */
+    }
+
     nav ul {
         width: 100%;
         font-size: x-small;
@@ -84,14 +95,29 @@
         margin: 0;
     }
 
+    .page-2 .leader .price-card .details .name {
+        font-weight: 200;
+        font-size: large;
+    }
+
+    .page-2 .card-container .price-card .details .price {
+        font-weight: 200;
+        font-size: smaller;
+    }
+
+    .page-2 .card-container .price-card .details .name {
+        font-weight: 200;
+        font-size: large;
+    }
+
     .page-2 .card-container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 50dvh);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 20dvh);
         justify-content: center;
     }
 
     .page-2 .card-container .price-card {
-        width: 70%;
+        width: 100%;
         height: 100%;
         margin: auto;
     }
