@@ -116,7 +116,7 @@
 
     .page-2 .card-container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 40dvh);
+        grid-template-rows: repeat(3, 30dvh);
         justify-content: center;
     }
 
