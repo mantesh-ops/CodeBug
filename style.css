@@ -325,6 +325,7 @@ nav ul li a {
     text-shadow: 0 0 0px #fff, 0 0 2px #fff, 0 0 2px;
     font-size: x-large;
 }
+
 /*  */
 .page-2 .card-container {
     margin-top: 1rem;
@@ -332,7 +333,7 @@ nav ul li a {
     height: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 50dvh);
+    grid-template-rows: repeat(2, 40dvh);
     gap: 10px;
     justify-content: center;
     place-content: center;
@@ -341,7 +342,7 @@ nav ul li a {
 }
 
 .page-2 .digial .price-card {
-    height: 30dvh;
+    height: auto;
     width: 20dvw;
     /* background: rgb(7, 64, 138); */
     display: flex;
@@ -440,6 +441,13 @@ nav ul li a {
 .page-2 .card-container .price-card .details .price {
     font-size: large;
 }
+
+/* .page-2 .card-container #demo,
+.page-2 .card-container #presenter,
+.page-2 .card-container #anchors,
+.page-2 .card-container #digital {
+    height: 70%;
+} */
 
 footer {
     height: 40dvh;
