@@ -68,6 +68,10 @@
         width: 95%;
     }
 
+    #digital {
+        margin-left: 6rem;
+    }
+
     .page-1 .left .main-description {
         font-size: medium;
     }
@@ -112,7 +116,7 @@
 
     .page-2 .card-container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 20dvh);
+        grid-template-rows: repeat(3, 40dvh);
         justify-content: center;
     }
 
