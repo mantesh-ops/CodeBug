@@ -40,7 +40,7 @@ const countdownInterval = setInterval(updateCountdown, 1000); // Update every se
 
 // Initialize Type.js
 var options = {
-    strings: ["Celebreting CodeBug Event", "Enjoy refreshments", "Giving Little gifts for all"],
+    strings: ["Celebrating CodeBug Event", "Enjoy refreshments", "Giving Little gifts for all"],
     typeSpeed: 40, // Adjust the typing speed as needed
     backSpeed: 40,
     showCursor: true,
